@@ -11,6 +11,9 @@ class ViewController: UIViewController {
         tableview.dataSource = self
         
         // TODO: 保存されているToDoリストの読み込み
+        if let storedTodoList = userDefaults.array(forKey: "todoList") as? [String] {
+            todoList.append(contentsOf: storedTodoList)
+        }
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
