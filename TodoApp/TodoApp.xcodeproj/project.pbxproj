@@ -16,6 +16,7 @@
 		842C08FA2CEC61320088E336 /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C08F92CEC61320088E336 /* TodoAppTests.swift */; };
 		842C09042CEC61320088E336 /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C09032CEC61320088E336 /* TodoAppUITests.swift */; };
 		842C09062CEC61320088E336 /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C09052CEC61320088E336 /* TodoAppUITestsLaunchTests.swift */; };
+		843F9BD22CEDA27E00324525 /* Utilitiy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F9BD12CEDA27E00324525 /* Utilitiy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		842C08FF2CEC61320088E336 /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C09032CEC61320088E336 /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		842C09052CEC61320088E336 /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		843F9BD12CEDA27E00324525 /* Utilitiy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilitiy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				842C08EB2CEC61320088E336 /* Assets.xcassets */,
 				842C08ED2CEC61320088E336 /* LaunchScreen.storyboard */,
 				842C08F02CEC61320088E336 /* Info.plist */,
+				843F9BD12CEDA27E00324525 /* Utilitiy.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				842C08E72CEC612F0088E336 /* ViewController.swift in Sources */,
 				842C08E32CEC612F0088E336 /* AppDelegate.swift in Sources */,
+				843F9BD22CEDA27E00324525 /* Utilitiy.swift in Sources */,
 				842C08E52CEC612F0088E336 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
