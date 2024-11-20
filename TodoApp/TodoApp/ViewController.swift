@@ -29,6 +29,24 @@ class ViewController: UIViewController {
     
     @IBAction func addButtonTapped(_ sender: Any) {
         // TODO: TODOの追加機能を実装する
+        let alertController = UIAlertController(title: "ToDo追加", message: "ToDoを入力してください。", preferredStyle: .alert)
+        alertController.addTextField(configurationHandler: nil)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+            guard let self = self else { return }
+            if let textField = alertController.textFields?.first, let todoText = textField.text, !todoText.isEmpty {
+                self.todoList.insert(todoText, at: 0)
+                self.tableview.insertRows(at: [IndexPath(row: 0, section: 0)], with: .right)
+                // 追加したToDoを保存
+                saveTodoList()
+            }
+        }
+        
+        alertController.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
     }
 }
 
