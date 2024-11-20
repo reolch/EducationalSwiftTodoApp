@@ -10,10 +10,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableview.dataSource = self
         
-        // TODO: 保存されているToDoリストの読み込み
+        // 保存されているToDoリストの読み込み
+        loadTodoList()
+    }
+    
+    
+    /// TODOリストを読み込む関数
+    func loadTodoList() {
         if let storedTodoList = userDefaults.array(forKey: "todoList") as? [String] {
             todoList.append(contentsOf: storedTodoList)
         }
+    }
+    
+    /// TODOリストを保存する関数
+    func saveTodoList() {
+        userDefaults.set(todoList, forKey: "todoList")
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
